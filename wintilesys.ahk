@@ -18,13 +18,12 @@ te := new TileEngine()
 ;~ te.SetMonitorPosition(3, "East", 5)	; Monitor 3 is to the East of monitor 2
 ;~ te.SetMonitorPosition(1, "East", 3)	; Monitor 1 is to the East of monitor 3 (Enable wrap)
  
-;~ ; Standard 3 monitor (1,2,3 order):
-;~ te.SetMonitorPosition(1, "West", 2)	; Monitor 1 is to the West of monitor 2
-;~ te.SetMonitorPosition(2, "West", 4)	; Monitor 3 is to the East of monitor 2
-;~ te.SetMonitorPosition(5, "East", 4)	; Monitor 1 is to the East of monitor 3 (Enable wrap)
-
+;~ ; [1, 3, 2] order....
 te.SetMonitorPosition(1, "West", 3)	; Monitor 1 is to the West of monitor 2
 te.SetMonitorPosition(3, "West", 2)	; Monitor 3 is to the East of monitor 2
+te.SetMonitorPosition(1, "East", 2)	; Monitor 3 is to the East of monitor 2
+te.SetMonitorPosition(3, "East", 1)	; Monitor 1 is to the East of monitor 3 (Enable wrap)
+;~ te.SetMonitorPosition(1, "West", 3)	; Monitor 1 is to the West of monitor 2
 
  
 ; A note about terms
