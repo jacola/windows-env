@@ -19,13 +19,15 @@ te := new TileEngine()
 ;~ te.SetMonitorPosition(1, "East", 3)	; Monitor 1 is to the East of monitor 3 (Enable wrap)
  
 ;~ ; [1, 3, 2] order....
-te.SetMonitorPosition(1, "West", 3)	; Monitor 1 is to the West of monitor 2
-te.SetMonitorPosition(3, "West", 2)	; Monitor 3 is to the East of monitor 2
-te.SetMonitorPosition(1, "East", 2)	; Monitor 3 is to the East of monitor 2
-te.SetMonitorPosition(3, "East", 1)	; Monitor 1 is to the East of monitor 3 (Enable wrap)
+;te.SetMonitorPosition(1, "West", 3)	; Monitor 1 is to the West of monitor 2
+;te.SetMonitorPosition(3, "West", 2)	; Monitor 3 is to the East of monitor 2
+;te.SetMonitorPosition(1, "East", 2)	; Monitor 3 is to the East of monitor 2
+;te.SetMonitorPosition(3, "East", 1)	; Monitor 1 is to the East of monitor 3 (Enable wrap)
 ;~ te.SetMonitorPosition(1, "West", 3)	; Monitor 1 is to the West of monitor 2
 
- 
+te.SetMonitorPosition(1, "West", 2)	; Monitor 1 is to the West of monitor 2
+te.SetMonitorPosition(2, "East", 1)	; Monitor 3 is to the East of monitor 2
+;
 ; A note about terms
 ; Vectors (eg {x:-1, y:0} meaning spanned along the left side of the monitor, aka "west")
 ; These are used to represent tile positions in a mathematical way that can be compared, altered etc
